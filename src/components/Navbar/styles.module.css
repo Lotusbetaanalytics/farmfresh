@@ -1,0 +1,468 @@
+.navbar {
+    width: 100%;
+    height: 180px;
+    padding: 1rem 15rem;
+    padding-top: 0.5rem;
+    position: fixed;
+    z-index: 9999;
+    /* background: #489EAD; */
+}
+
+.navbarActive {
+    width: 100%;
+    height: 180px;
+    padding: 1rem 15rem;
+    position: fixed;
+    ;
+    z-index: 9999;
+    background: white;
+    box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.02),
+        0px 2px 4px -2px rgba(0, 0, 0, 0.08),
+        0px 4px 8px -4px rgba(0, 0, 0, 0.10),
+        0px 8px 16px -8px rgba(0, 0, 0, 0.12);
+    animation: slideBg 20s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-repeat: no-repeat;
+}
+
+@keyframes slideBg {
+    0% {
+        background: linear-gradient(0deg, rgba(72, 158, 173, 0.8), rgba(72, 158, 173, 0.95)), url(../../assets/farmfresh.jpg)no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    25% {
+        background: linear-gradient(0deg, rgba(72, 158, 173, 0.8), rgba(72, 158, 173, 0.95)), url(../../assets/farmfresh1.jpg)no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    50% {
+        background: linear-gradient(0deg, rgba(72, 158, 173, 0.8), rgba(72, 158, 173, 0.95)), url(../../assets/farmfresh11.jpg)no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    75% {
+        background: linear-gradient(0deg, rgba(72, 158, 173, 0.8), rgba(72, 158, 173, 0.95)), url(../../assets/farmfresh12.jpg)no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    100% {
+        background: linear-gradient(0deg, rgba(72, 158, 173, 0.8), rgba(72, 158, 173, 0.95)), url(../../assets/farmfresh4.jpg)no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.logo {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+
+.logo img {
+    width: 10%;
+}
+
+.bar {
+    width: 15%;
+    height: 80px;
+    float: left;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.navMenu {
+    width: 100%;
+    display: block;
+    float: right;
+}
+
+.navMenu ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.navMenu ul li {
+    width: 9%;
+    padding: 0;
+    margin: 0;
+    line-height: 40px;
+    list-style: none;
+    text-align: center;
+    float: left;
+}
+
+.navMenu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.navbarActive ul li a {
+    color: white;
+}
+
+.btn {
+    display: block;
+    height: 2.5rem;
+    width: 15%;
+    padding: .8rem;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.02),
+        0px 2px 4px -2px rgba(0, 0, 0, 0.08),
+        0px 4px 8px -4px rgba(0, 0, 0, 0.10),
+        0px 8px 16px -8px rgba(0, 0, 0, 0.12);
+    float: left;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    text-decoration: none;
+}
+
+.blue {
+    background: #29aae3;
+    color: white;
+}
+
+.white {
+    background: white;
+    color: #29aae3;
+}
+
+.dropdown {
+    /* width: 100%; */
+    height: auto;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 250px;
+    z-index: 1;
+    border-radius: 2%;
+    margin-top: 1rem;
+}
+
+.dropdown ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown ul li {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    float: left;
+    list-style: none;
+    text-align: center;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.dropdown ul li a {
+    color: #29aae3;
+    font-weight: bold;
+}
+
+.dropdown ul li:hover {
+    background: rgba(0, 0, 0, 0.22);
+    color: white;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.navMenu ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown:after {
+    content: '';
+    /* Required to display content */
+    position: absolute;
+    /* Sets the position absolute to the top div */
+    top: 0;
+    left: 35%;
+    /* position the little arrow */
+    margin-left: -15px;
+    margin-top: -15px;
+    /* Set margin equal to border px */
+    width: 0;
+    z-index: 1;
+    height: 0;
+    border-bottom: solid 15px #FFF;
+    /* Creates the arrow pointing up, to change to a notch instead user border-top */
+    border-left: solid 15px transparent;
+    /* Creates triangle effect */
+    border-right: solid 15px transparent;
+    /* Creates triangle effect */
+}
+
+.navMenuactive {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 1rem 2rem;
+    z-index: 9999;
+    height: 30rem;
+    animation: slideBg 20s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-repeat: no-repeat;
+}
+
+.navMenuactive ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.navMenuactive ul li {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    line-height: 40px;
+    height: 40px;
+    list-style: none;
+    text-align: center;
+    float: left;
+
+
+}
+
+.navMenuactive ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* phone-only */
+@media (max-width: 599px) {
+    .navbar {
+        padding: 0rem;
+    }
+
+    .bar {
+        width: 100%;
+        height: 2rem;
+        padding-left: 1rem;
+        display: block;
+    }
+
+    .navMenu {
+        display: none;
+    }
+
+    .navMenuactive {
+        display: block;
+    }
+
+    .navbarActive {
+        padding: 0rem;
+    }
+
+}
+
+/* .tablet-portrait-up  */
+@media (min-width: 600px) {
+    .navbar {
+        padding: 0rem;
+    }
+
+    .bar {
+        width: 100%;
+        height: 2rem;
+        padding-left: 1rem;
+        display: block;
+    }
+
+    .navMenu {
+        display: none;
+    }
+
+    .navMenuactive {
+        display: block;
+    }
+
+    .navbarActive {
+        padding: 0rem;
+    }
+}
+
+/* tablet-portait-only */
+@media (min-width: 600px) and (max-width: 899px) {
+    .navbar {
+        padding: 0rem;
+    }
+
+    .bar {
+        width: 100%;
+        height: 2rem;
+        padding-left: 1rem;
+        display: block;
+    }
+
+    .navMenu {
+        display: none;
+    }
+
+    .navMenuactive {
+        display: block;
+    }
+
+    .navbarActive {
+        padding: 0rem;
+    }
+}
+
+/* tablet-landscape-up */
+@media (min-width: 900px) {
+    .navbar {
+        padding: 0rem;
+    }
+
+    .bar {
+        width: 100%;
+        height: 2rem;
+        padding-left: 1rem;
+        display: block;
+    }
+
+    .navMenu {
+        display: none;
+    }
+
+    .navMenuactive {
+        display: block;
+    }
+
+    .navbarActive {
+        padding: 0rem;
+    }
+}
+
+/* tablet-landscape-only */
+@media (min-width: 900px) and (max-width: 1199px) {
+    .navbar {
+        padding: 1rem 5rem;
+    }
+
+    .bar {
+        display: none;
+    }
+
+    .navMenu {
+        display: block;
+    }
+
+    .navMenuactive {
+        display: none;
+    }
+
+    .navbarActive {
+        padding: 1rem 5rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .navbar {
+        padding: 1rem 5rem;
+    }
+
+    .bar {
+        display: none;
+    }
+
+    .navMenu {
+        display: block;
+    }
+
+    .navMenuactive {
+        display: none;
+    }
+
+    .navbarActive {
+        padding: 1rem 5rem;
+    }
+}
+
+/* .desktop-up */
+@media (min-width: 1300px) {
+    .navbar {
+        padding: 1rem 15rem;
+    }
+
+    .bar {
+        display: none;
+    }
+
+    .navMenu {
+        display: block;
+    }
+
+    .navMenuactive {
+        display: none;
+    }
+
+    .navbarActive {
+        padding: 1rem 15rem;
+    }
+}
+
+/* desktop-only */
+@media (min-width: 1300px) and (max-width: 1799px) {
+    .navbar {
+        padding: 1rem 15rem;
+    }
+
+    .bar {
+        display: none;
+    }
+
+    .navMenu {
+        display: block;
+    }
+
+    .navMenuactive {
+        display: none;
+    }
+
+    .navbarActive {
+        padding: 1rem 15rem;
+    }
+}
+
+/* big-desktop-up */
+@media (min-width: 1800px) {
+    .navbar {
+        padding: 1rem 15rem;
+    }
+
+    .bar {
+        display: none;
+    }
+
+    .navMenu {
+        display: block;
+    }
+
+    .navMenuactive {
+        display: none;
+    }
+
+    .navbarActive {
+        padding: 1rem 15rem;
+    }
+}

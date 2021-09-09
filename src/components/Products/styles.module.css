@@ -1,0 +1,158 @@
+.product {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 5rem 10rem;
+}
+
+.product h1 {
+    font-size: 2rem;
+    color: #489EAD;
+}
+
+.grid a {
+    text-decoration: none;
+    color: black;
+}
+
+.products {
+    width: 100%;
+    height: 35rem;
+    overflow: hidden;
+}
+
+.img {
+    width: 100%;
+    height: 20rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.img img {
+    width: 100%;
+}
+
+.text {
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 20px;
+}
+
+
+
+
+
+
+/* phone-only */
+@media (max-width: 599px) {
+    .product {
+        padding: 1rem;
+    }
+
+    .grid {
+        grid-template-columns: 100%;
+        grid-gap: 0;
+    }
+
+}
+
+/* .tablet-portrait-up  */
+@media (min-width: 600px) {
+    .product {
+        padding: 1rem 2rem;
+    }
+
+    .grid {
+        grid-template-columns: 100%;
+        grid-gap: 0;
+    }
+}
+
+/* tablet-portait-only */
+@media (min-width: 600px) and (max-width: 899px) {
+    .product {
+        padding: 1rem 2rem;
+    }
+
+    .grid {
+        grid-template-columns: 100%;
+        grid-gap: 0;
+    }
+}
+
+/* tablet-landscape-up */
+@media (min-width: 900px) {
+    .product {
+        padding: 2rem;
+    }
+
+    .grid {
+        grid-template-columns: 100%;
+        grid-gap: 0px;
+    }
+}
+
+/* tablet-landscape-only */
+@media (min-width: 900px) and (max-width: 1199px) {
+    .product {
+        padding: 3rem;
+    }
+
+    .grid {
+        grid-template-columns: 100%;
+        grid-gap: 0px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .product {
+        padding: 4rem;
+    }
+
+    .grid {
+        grid-template-columns: 32% 32% 32%;
+        grid-gap: 20px;
+    }
+}
+
+/* .desktop-up */
+@media (min-width: 1300px) {
+    .product {
+        padding: 5rem 10rem;
+    }
+
+    .grid {
+        grid-template-columns: 32% 32% 32%;
+        grid-gap: 20px;
+    }
+}
+
+/* desktop-only */
+@media (min-width: 1300px) and (max-width: 1799px) {
+    .product {
+        padding: 5rem 10rem;
+    }
+
+    .grid {
+        grid-template-columns: 32% 32% 32%;
+        grid-gap: 20px;
+    }
+}
+
+/* big-desktop-up */
+@media (min-width: 1800px) {
+    .product {
+        padding: 5rem 10rem;
+    }
+
+    .grid {
+        grid-template-columns: 32% 32% 32%;
+        grid-gap: 20px;
+    }
+}

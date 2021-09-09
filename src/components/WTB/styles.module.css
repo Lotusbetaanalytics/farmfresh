@@ -1,0 +1,153 @@
+.wtb {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 3rem;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    grid-gap: 20px;
+}
+
+.card {
+    width: 100%;
+    height: 25rem;
+
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgba(72, 158, 173, 0.8), rgba(72, 158, 173, 0.95)), url(../../assets/farmfresh11.jpg);
+    background-size: contain;
+    padding: 4rem 3rem;
+    color: white;
+    text-decoration: none;
+    margin: 0 auto;
+    /* display: inline-block; */
+    margin-bottom: 1rem;
+
+}
+
+.circle:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+a.circle {
+    text-decoration: none;
+}
+
+
+
+
+/* phone-only */
+@media (max-width: 599px) {
+    .wtb {
+        padding: 1rem;
+    }
+
+    .grid {
+        grid-template-columns: 100%;
+        grid-gap: 0px;
+    }
+}
+
+/* .tablet-portrait-up  */
+@media (min-width: 600px) {
+    .wtb {
+        padding: 1rem;
+    }
+
+    .grid {
+        grid-template-columns: 48% 48%;
+        grid-gap: 20px;
+    }
+}
+
+/* tablet-portait-only */
+@media (min-width: 600px) and (max-width: 899px) {
+    .wtb {
+        padding: 1rem;
+    }
+
+    .grid {
+        grid-template-columns: 48% 48%;
+        grid-gap: 20px;
+    }
+}
+
+/* tablet-landscape-up */
+@media (min-width: 900px) {
+    .wtb {
+        padding: 1rem;
+    }
+
+    .grid {
+        grid-template-columns: 32% 32% 32%;
+        grid-gap: 20px;
+    }
+}
+
+/* tablet-landscape-only */
+@media (min-width: 900px) and (max-width: 1199px) {
+    .wtb {
+        padding: 1rem;
+    }
+
+    .grid {
+        grid-template-columns: 32% 32% 32%;
+        grid-gap: 20px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .wtb {
+        padding: 2rem;
+    }
+
+    .grid {
+        grid-template-columns: 32% 32% 32%;
+        grid-gap: 20px;
+    }
+}
+
+/* .desktop-up */
+@media (min-width: 1300px) {
+    .wtb {
+        padding: 3rem;
+    }
+
+    .grid {
+        grid-template-columns: 15% 15% 15% 15% 15% 15%;
+        grid-gap: 20px;
+    }
+}
+
+/* desktop-only */
+@media (min-width: 1300px) and (max-width: 1799px) {
+    .wtb {
+        padding: 3rem;
+    }
+
+    .grid {
+        grid-template-columns: 15% 15% 15% 15% 15% 15%;
+        grid-gap: 20px;
+    }
+}
+
+/* big-desktop-up */
+@media (min-width: 1800px) {
+    .wtb {
+        padding: 3rem;
+    }
+
+    .grid {
+        grid-template-columns: 15% 15% 15% 15% 15% 15%;
+        grid-gap: 20px;
+    }
+}

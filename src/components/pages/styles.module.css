@@ -1,0 +1,131 @@
+.yoghurt {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 5rem 10rem;
+}
+
+.yoghurt h1 {
+    font-size: 2rem;
+    color: #489EAD;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-gap: 20px;
+}
+
+
+
+
+
+/* phone-only */
+@media (max-width: 599px) {
+    .yoghurt {
+        padding: 1rem;
+    }
+
+    .grid {
+        grid-template-columns: 100%;
+        grid-gap: 0px;
+    }
+
+
+}
+
+/* .tablet-portrait-up  */
+@media (min-width: 600px) {
+    .yoghurt {
+        padding: 1rem 2rem;
+    }
+
+    .grid {
+        grid-template-columns: 100%;
+        grid-gap: 0px;
+    }
+}
+
+/* tablet-portait-only */
+@media (min-width: 600px) and (max-width: 899px) {
+    .yoghurt {
+        padding: 1rem 2rem;
+    }
+
+    .grid {
+        grid-template-columns: 48% 48%;
+        grid-gap: 20px;
+    }
+}
+
+/* tablet-landscape-up */
+@media (min-width: 900px) {
+    .yoghurt {
+        padding: 1rem 2rem;
+    }
+
+    .grid {
+        grid-template-columns: 48% 48%;
+        grid-gap: 20px;
+    }
+}
+
+/* tablet-landscape-only */
+@media (min-width: 900px) and (max-width: 1199px) {
+    .yoghurt {
+        padding: 3rem;
+    }
+
+    .grid {
+        grid-template-columns: 48% 48%;
+        grid-gap: 20px;
+    }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .yoghurt {
+        padding: 3rem 4rem;
+    }
+
+    .grid {
+        grid-template-columns: 48% 48%;
+        grid-gap: 20px;
+    }
+}
+
+/* .desktop-up */
+@media (min-width: 1300px) {
+    .yoghurt {
+        padding: 5rem 10rem;
+    }
+
+    .grid {
+        grid-template-columns: 24% 24% 24% 24%;
+        grid-gap: 20px;
+    }
+}
+
+/* desktop-only */
+@media (min-width: 1300px) and (max-width: 1799px) {
+    .yoghurt {
+        padding: 5rem 10rem;
+    }
+
+    .grid {
+        grid-template-columns: 24% 24% 24% 24%;
+        grid-gap: 20px;
+    }
+}
+
+/* big-desktop-up */
+@media (min-width: 1800px) {
+    .yoghurt {
+        padding: 5rem 10rem;
+    }
+
+    .grid {
+        grid-template-columns: 24% 24% 24% 24%;
+        grid-gap: 20px;
+    }
+}
